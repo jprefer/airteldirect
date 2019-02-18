@@ -1,0 +1,83 @@
+<html>
+<head>
+<LINK href="rates.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" LANGUAGE="JavaScript" src="js/alphabet.js"></script>
+<script language="javascript">
+  var a = window.location.toString();
+  var name = a.substring(a.indexOf("=")+1);
+<!--  document.write(name); -->
+</script>
+<title>..:: Airtel Direct product info ::..</title>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2914412-5']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>	
+
+</head>
+
+<body>
+
+<center>
+        <h3>Instructions</h3>
+</center>
+
+<ul>
+<li>Dial one of the access number listed below</li>
+<li>Follow the prompts to select language and enter PIN</li>
+<li>When you are asked to dial your destination number,
+	<ul><li>For domestic calls: Dial 1 + area code + phone number and then press the # key</li>
+	<li>For international calls: Dial 011 + country code + city code + phone number and then press the # key</li></ul></li>
+</ul>
+<p style="font-size:small;">
+NOTE: NEVER press the "SEND" button after you enter the destination number if you are calling from your cell phone otherwise the call may be terminated by your        
+mobile carrier and not by us.</p>
+
+
+<hr />
+<center>
+        <h3>Access Numbers</h3>
+
+<script>
+	document.writeln("<iframe frameborder='0' height=200px name='access_frm' scrolling=auto width=750px src=showaccess.php?card="+name+"></iframe>");
+</script>
+
+</center>
+<br />
+<p style="font-size:small;">
+(*) No Pin: Your phone number is registered in our system the first time you call, after that you don't need to enter a PIN to make a 
+call since our system will recognize your number associated with your PIN.<br />
+ &nbsp; &nbsp; &nbsp; Pin needed: You will be asked for your PIN every time you call using this access number. 
+</p>
+
+
+<hr />
+
+<CENTER>
+	
+	<h3>Rates</h3>
+         <FONT COLOR=Green>Go to:</FONT>
+         <SCRIPT LANGUAGE=JavaScript>
+           <!--
+             document.write(ALPHABET())
+           //-->
+         </SCRIPT>
+
+<br /><br /><br />
+
+
+
+<script>
+document.writeln("<iframe frameborder='0' height=500px name='rates_frm' scrolling=auto width=750px src=showrates.php?card="+name+"></iframe>");
+</script>
+
+
+</center>
+</body>
+</html>

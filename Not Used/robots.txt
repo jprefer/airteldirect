@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /Backup
+Disallow: /SP
+Disallow: /test
+Disallow: /rf_folder

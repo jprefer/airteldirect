@@ -1,0 +1,42 @@
+<?php
+require('table.class.php'); 
+require('cgi-bin/webservices.php');
+
+$card = $_GET['card'];
+
+$Data = GetAccess($card,$db_name,$db_host,$db_user,$db_pwd);
+
+//print_r($Data);
+
+$tbl = new HTML_Table(null, 'DID-Table', 0, 0, 0);
+
+$tbl->addRow();
+    $tbl->addCell('Area', 'first', 'header');
+    $tbl->addCell('| City', null, 'header');
+    $tbl->addCell('| State', null, 'header');
+    $tbl->addCell('| Access Number', null, 'header');
+    $tbl->addCell('| PIN Required (*)', null, 'header');
+    $tbl->addCell('| ', null, 'header');
+
+    $i = 0; 
+    foreach($Data as $records) {
+	$area = $records['Area'];
+	$city = $records['City'];
+        $state = $records['State'];
+        $number = $records['Number'];
+	$PIN = $records['PIN'];
+	$surcharge = $records['Surcharge'];
+
+	$class = 'row' . ($i++ % 2);
+
+        $tbl->addRow($class);
+            $tbl->addCell($area);
+            $tbl->addCell("|" . $city);
+            $tbl->addCell("|" . $state);
+            $tbl->addCell("|" . $number);
+            $tbl->addCell("|" . $PIN);
+            $tbl->addCell("|" . $surcharge);
+    }
+echo $tbl->display(); 
+
+?>

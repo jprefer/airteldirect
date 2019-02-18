@@ -1,0 +1,48 @@
+
+/* ------ DID Table formatting ----*/
+.DID-Table
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+/*	margin: 45px; */
+	width: 680px;
+	text-align: left;
+	border-collapse: collapse;
+}
+
+.DID-Table th
+{
+	font-size: 13px;
+	font-weight: normal;
+	padding: 2px;
+	background: #787878;
+	border-top: 4px solid #aabcfe;
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	text-align:left;
+}
+.DID-Table .row0 td
+{
+	padding: 2px;
+	background: #D8D8D8; 
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	color: #000;
+
+}
+.DID-Table .row1 td
+{
+        padding: 2px;
+        background: #B8B8B8;
+        border-bottom: 1px solid #fff;
+        border-top: 1px solid transparent;
+        color: #000;
+}
+
+
+
+.DID-Table tr:hover td
+{
+	background: #4385C1;
+	color: #fff;
+}
